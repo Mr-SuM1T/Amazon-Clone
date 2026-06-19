@@ -1,7 +1,7 @@
 *{
     margin: 0;
     font-family: Arial;
-    border: border-box;
+    box-sizing: border-box;
 }
 .project{
     background-color:#ff6600; 
@@ -249,4 +249,96 @@ ul a {
 .copyright{
     text-align: center;
     padding-top: 15px;
+}
+
+
+/* ===== RESPONSIVE FIXES ===== */
+
+* {
+  box-sizing: border-box; /* Fix the typo from top */
+}
+
+/* Tablet (max 768px) */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  /* Search bar full width */
+  .nav-search {
+    width: 100%;
+    order: 4;
+  }
+
+  /* Hide address and language on small screens */
+  .add-first, .add-sec, .nav-sec {
+    display: none;
+  }
+
+  /* Panel wraps text */
+  .panel {
+    height: auto;
+    flex-direction: column;
+    padding: 8px;
+    gap: 5px;
+  }
+
+  .panel-ops {
+    width: 100%;
+    font-size: 0.75rem;
+  }
+
+  /* Hero section */
+  .hero-section {
+    height: 200px;
+  }
+
+  .hero-msg {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  /* Product boxes — 2 per row on tablet */
+  .box {
+    width: 20%;
+  }
+
+  /* Footer */
+  .foot-panel2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .foot-panel3 {
+    height: auto;
+    padding: 15px;
+  }
+}
+
+/* Phone (max 480px) */
+@media (max-width: 480px) {
+
+  /* Product box  — 1 per row on phone */
+  .box {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  /* Hero */
+  .hero-section {
+    height: 150px;
+  }
+
+  /* Footer links smaller */
+  ul a {
+    font-size: 0.85rem;
+  }
 }
