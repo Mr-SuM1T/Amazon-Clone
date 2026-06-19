@@ -234,7 +234,10 @@ ul a {
 }
 .pages{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 30px
+}
+.pages a {
+    padding-left: 20px;
 }
 .copyright{
     text-align: center;
